@@ -1,0 +1,20 @@
+:root {
+  --dark: #192524;
+  --deep-teal: #3C5759;
+  --sage: #959D90;
+  --mint: #D1EBDB;
+  --light-gray: #D0D5CE;
+  --beige: #EFECE9;
+} 
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+}

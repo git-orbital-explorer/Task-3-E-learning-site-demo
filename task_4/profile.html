@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Profile - LearnHub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-[var(--beige)] text-[var(--dark)] min-h-screen flex flex-col">
+  <header class="bg-[var(--mint)] shadow p-4 flex justify-between items-center rounded-b-2xl">
+    <a href="index.html" class="text-2xl font-bold hover:underline">LearnHub</a>
+    <nav class="space-x-4">
+      <a href="index.html" class="hover:text-[var(--deep-teal)]">Home</a>
+      <a href="courses.html" class="hover:text-[var(--deep-teal)]">Courses</a>
+      <a href="dashboard.html" class="hover:text-[var(--deep-teal)]">Dashboard</a>
+      <a href="profile.html" class="hover:text-[var(--deep-teal)] font-semibold underline">Profile</a>
+    </nav>
+  </header>
+
+  <main class="px-6 py-10 max-w-4xl mx-auto flex-grow">
+    <h2 class="text-3xl font-bold text-center mb-8">User Profile</h2>
+    <form class="bg-white rounded-xl shadow p-6">
+      <div class="mb-4">
+        <label for="username" class="block text-sm font-medium mb-1">Username</label>
+        <input type="text" id="username" class="border border-gray-300 rounded p-2 w-full" placeholder="Enter your username" required />
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-medium mb-1">Email</label>
+        <input type="email" id="email" class="border border-gray-300 rounded p-2 w-full" placeholder="Enter your email" required />
+      </div>
+      <div class="mb-4">
+        <label for="password" class="block text-sm font-medium mb-1">Password</label>
+        <input type="password" id="password" class="border border-gray-300 rounded p-2 w-full" placeholder="Enter your password" required />
+      </div>
+      <div class="mb-4">
+        <label for="bio" class="block text-sm font-medium mb-1">Bio</label>
+        <textarea id="bio" class="border border-gray-300 rounded p-2 w-full" rows="4" placeholder="Tell us about yourself"></textarea>
+      </div>
+      <button type="submit" class="bg-[var(--deep-teal)] text-white px-6 py-2 rounded-full hover:bg-[var(--dark)] transition">Save Changes</button>
+    </form>
+  </main>
+
+  <footer class="py-6 bg-[var(--mint)] rounded-t-2xl text-center text-sm text-[var(--deep-teal)]">
+    © 2025 LearnHub. All rights reserved.
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

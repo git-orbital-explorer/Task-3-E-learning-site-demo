@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Detail</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --dark: #192524;
+      --deep-teal: #3C5759;
+      --sage: #959D90;
+      --mint: #D1EBDB;
+      --light-gray: #D0D5CE;
+      --beige: #EFECE9;
+    }
+  </style>
+</head>
+<body class="bg-[var(--beige)] text-[var(--dark)]">
+  <header class="bg-[var(--mint)] shadow p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">LearnHub</h1>
+    <nav>
+      <a href="courses.html" class="mx-2 hover:text-[var(--deep-teal)]">Courses</a>
+      <a href="dashboard.html" class="mx-2 hover:text-[var(--deep-teal)]">Dashboard</a>
+    </nav>
+  </header>
+
+  <main class="p-6 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold mb-4">Web Development</h2>
+    <video class="w-full mb-4 rounded" controls>
+      <source src="assets/videos/intro.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="mb-4">Learn the basics of HTML, CSS, and JavaScript through hands-on projects.</p>
+    <ul class="list-disc list-inside">
+      <li>HTML Basics</li>
+      <li>CSS Styling</li>
+      <li>JavaScript Interactivity</li>
+    </ul>
+  </main>
+</body>
+</html>
